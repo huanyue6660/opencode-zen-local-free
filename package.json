@@ -1,5 +1,5 @@
 {
-  "name": "magpie-zen-free-lite",
+  "name": "magpie-opencode-zen-local-free",
   "version": "0.1.0",
   "description": "OpenCode Zen free models in magpie, with the OpenCode request shape the free tier accepts.",
   "type": "module",
@@ -9,7 +9,7 @@
   "private": true,
   "keywords": ["magpie", "magpie-plugin", "opencode", "opencode-plugin", "zen", "free"],
   "magpie": {
-    "name": "Zen 免费 Lite",
+    "name": "opencode-free",
     "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cmVjdCB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgcng9IjI4IiBmaWxsPSIjMWYyOTM3Ii8+PHRleHQgeD0iNjQiIHk9Ijg2IiBmb250LXNpemU9IjY0IiBmb250LWZhbWlseT0ic3lzdGVtLXVpLHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMzNGQzOTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlo8L3RleHQ+PC9zdmc+",
     "maxConcurrency": 2
   }

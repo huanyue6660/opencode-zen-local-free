@@ -7,7 +7,7 @@
 // 全程不联网：fetch 被替换成一个记录器。
 
 import assert from "node:assert/strict"
-import { ZenFreeLitePlugin } from "./index.mjs"
+import { OpenCodeZenLocalFreePlugin } from "./index.mjs"
 
 const captured = []
 let reply = () => Response.json({ ok: true })
@@ -18,8 +18,8 @@ globalThis.fetch = async (input, init = {}) => {
   return reply()
 }
 
-const plugin = await ZenFreeLitePlugin({ directory: process.cwd() })
-assert.equal(plugin.auth.provider, "zen-free-lite")
+const plugin = await OpenCodeZenLocalFreePlugin({ directory: process.cwd() })
+assert.equal(plugin.auth.provider, "opencode-zen-local-free")
 assert.equal(typeof plugin.config, "function")
 assert.equal(typeof plugin.provider.models, "function")
 assert.equal(typeof plugin["chat.headers"], "function")

@@ -20,7 +20,7 @@ import { dirname, join, resolve } from "node:path"
 
 // ─── 常量 ────────────────────────────────────────────────────────────────
 
-const PROVIDER = "zen-free-lite"
+const PROVIDER = "opencode-zen-local-free"
 const PROVIDER_NAME = "OpenCode Zen 免费 Lite"
 const BASE = "https://opencode.ai/inference/v1"
 
@@ -612,7 +612,7 @@ async function discover(signal) {
 
 // ─── 插件入口（整个文件只导出这一个函数） ───────────────────────────────
 
-export const ZenFreeLitePlugin = async (ctx = {}, _options = {}) => {
+export const OpenCodeZenLocalFreePlugin = async (ctx = {}, _options = {}) => {
   const directory = typeof ctx?.directory === "string" && ctx.directory ? ctx.directory : process.cwd()
   const project = projectID(directory)
 
